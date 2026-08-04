@@ -241,7 +241,7 @@ const rc=p=>p===0?'rz':p<30?'rc':'rw';
 async function fetchData() {
   document.getElementById('loadingScreen').style.display='flex';
   document.getElementById('mainContent').style.display='none';
-  document.getElementById('loadingMsg').textContent='กำลังดึงข้อมูลจาก Google Sheets...';
+  document.getElementById('loadingMsg').textContent='กำลังดึงข้อมูลจาก ระบบติดตาม Cen-ProjectII...';
   if (!API_URL || API_URL.trim() === '' || API_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
     showError('ยังไม่ได้ตั้งค่า API URL','กรุณาแก้ไข API_URL ในโค้ด JavaScript\nให้เป็น URL ของ Google Apps Script v3 ที่ Deploy แล้ว');
     return;
